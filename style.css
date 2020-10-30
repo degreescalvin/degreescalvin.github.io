@@ -101,6 +101,15 @@ nav{
     line-height: 1;
 }
 
+.author{
+	position: relative;
+	float: right;
+	right: 15px;
+	bottom: 15px;
+	letter-spacing: .1em;
+	line-height: 1;
+}
+
 
 .header p{
     /*top: 60%;*/
@@ -206,7 +215,6 @@ figure{
 
 footer{
     width: 0 auto;
-    position: fixed;
     bottom: 0;
     padding: 0 0 10px 10px;
 }
