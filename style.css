@@ -138,11 +138,6 @@ nav{
 	padding: 0 20% 0 20%;
 }
 
-.rotate{
-	display: none;
-	padding-top: 30px;
-}
-
 /*top div*/
 .top{
 	height: 30vh;
@@ -172,11 +167,11 @@ nav{
 	margin-bottom: 18em;
 }
 
-#desktopimg {
+#desktop {
 	display:block;
 }
 
-#mobileimg {
+#mobile {
 	display:none;
 }
 
@@ -311,16 +306,25 @@ footer{
 	}
 
 	.contact{
-	right: 5%;
+		right: 5%;
 	}
 
 	.contactlink{
 		right: 5%;
 	}
 
-	.rotate{
-		display: block;
-		padding-top: 30px;
+	/*rotate icon animation*/
+	#rotateicon {
+  	animation: rotation 2s infinite linear;
+	}
+
+	@keyframes rotation {
+	  from {
+	    transform: rotate(0deg);
+	  }
+	  to {
+	    transform: rotate(359deg);
+	  }
 	}
 
 	.top{
@@ -349,22 +353,22 @@ footer{
 
 	/*set L column width*/
 	.left{
-		width: 100%;
+		width: 95%;
 	}
 
 	/*set R column width*/
 	.right{
-		width: 100%;
+		width: 95%;
 	}
 
 
 	/*switch off desktop images*/
-	#desktopimg {
+	#desktop {
 		display: none;
 	}
 
 	/*switch on mobile images*/
-	#mobileimg {
+	#mobile {
 		display: block;
 	}
 
