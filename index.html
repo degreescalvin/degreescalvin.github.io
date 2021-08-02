@@ -12,7 +12,7 @@
 	<script src="https://kit.fontawesome.com/6a9a40719a.js" crossorigin="anonymous"></script>
 
 	<!--favicon script-->
-	<script>
+	<script type="text/javascript">
 
 		var favicon_images = [
 			'images/favicon/favicon000.png',
@@ -623,7 +623,7 @@
 
 				<div class="column right">
 					<h3>Currently</h3>
-					<p>Listening to Chet Baker in Tokyo (1987)</p>
+					<p id="currently"></p>
 					<br>
 					<h3>Say hi &#128075;</h3>
 					<p><a href="mailto:kiaora@calvinlai.design" target="_blank">kiaora@calvinlai.design</a></p>
@@ -650,6 +650,29 @@
 	<div class="madeby">
 		<h4>Thanks for visting!</h4>
 	</div>
+
+	<!--Script for dynamic Currently doing section-->
+	<script type="text/javascript">
+
+	  function CurrentlyDoing()
+	    {
+	      var Activity = [
+	      	'Listening to Chet Baker',
+	      	'Watching the Olympics',
+	      	'Reading Lord of the Rings',
+	      	'Playing Legend of Zelda',
+	      	'Learning pottery',
+	      	'Learning Japanese',
+					'Into chayote',
+					'Sleeping'
+	      ];
+	      var Pick = Math.floor(Math.random() * (Activity.length));
+	      document.getElementById('currently').innerHTML = Activity[Pick];
+	    }
+
+	    document.addEventListener("load", CurrentlyDoing());
+
+	</script>
 
 </footer>
 </body>
