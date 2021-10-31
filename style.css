@@ -135,13 +135,22 @@ nav{
 
 /*sun and moon indicators*/
 .legend{
-	padding: 0 20% 0 20%;
+	display: inline-block;
+	margin-top: 0;
+	padding: 18px 20% 0 20%;
 }
 
-/*top div*/
-.top{
-	height: 30vh;
-	margin-top: 40px;
+/*filter div*/
+.filter{
+	/*margin-top: 0px;*/
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+/*topgap div*/
+.topgap{
+	height: 40vh;
+	margin-top: 0px;
 	margin-left: 10%;
 	margin-right: 10%;
 }
@@ -159,12 +168,12 @@ nav{
 
 .project-description{
 	padding: 0 30% 0 20%;
-	margin-bottom: 1.5em;
+	margin-bottom: 18em;
 }
 
 .project-image{
 	width: 100%;
-	margin-bottom: 18em;
+	margin-bottom: 1.5em;
 }
 
 #desktop {
@@ -184,7 +193,7 @@ nav{
 /*set the style to match the project descriptions*/
 .bio-description{
 	padding-left: 20%;
-	margin-bottom: 1.5em;
+	margin-bottom: 18em;
 }
 
 /*set the row width*/
@@ -214,15 +223,15 @@ footer{
 }
 
 
-.rebels{
+.footericon{
 	float: left;
 	width: auto;
   margin: 0 0 5px 5px;
 	transition: color .5s ease-out;
 }
 
-.rebels:hover{
-	color: #D50000;
+.footericon:hover{
+	color: #ffc507;
 }
 
 
@@ -233,7 +242,7 @@ footer{
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 100px;
+  width: 160px;
   background-color: #f8f8f8;
   color: #000;
   text-align: center;
@@ -272,16 +281,16 @@ footer{
 /*sets style when screen smaller than 900px*/
 @media screen and (max-width: 900px) {
 	.legend{
-		padding: 0 20% 0 0;
+		padding: 18px 0 0 30%;
 	}
 
 	.project-description{
 		padding: 0 0 0 0;
-		margin-bottom: 1.5em;
+		margin-bottom: 10em;
 	}
 
 	.project-image{
-		margin-bottom: 10em;
+		margin-bottom: 1.5em;
 	}
 
 	/*set the style to match the project descriptions*/
@@ -327,9 +336,17 @@ footer{
 	  }
 	}
 
-	.top{
+	.filter{
 		margin-left: 5%;
 		margin-right: 5%;
+	}
+
+	.legend{
+		padding: 80px 0 0 0;
+	}
+
+	.topgap{
+		height: 20vh;
 	}
 
 	.projects{
@@ -338,7 +355,7 @@ footer{
 		margin-right: 5%;
 	}
 
-	.project-image{
+	.project-description{
 		margin-bottom: 10em;
 	}
 
