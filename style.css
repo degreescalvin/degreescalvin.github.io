@@ -87,7 +87,7 @@ nav{
 /*Calvin Lai title only*/
 .title{
   position: fixed;
-	display: inline-block;
+	/*display: inline-block;*/
 	float: left;
 	width: auto;
   margin: 10px 0 0 10%;
@@ -100,7 +100,7 @@ nav{
 .titlelink{
 	opacity: 0%;
   position: fixed;
-	display: inline-block;
+	/*display: inline-block;*/
 	float: left;
 	width: auto;
   margin: 10px 0 0 10%;
@@ -111,7 +111,7 @@ nav{
 /*contact TEXT ONLY*/
 .contact{
   position: fixed;
-	display: inline-block;
+	/*display: inline-block;*/
 	float: right;
 	width: auto;
   margin: 10px 0 0 0;
@@ -124,7 +124,7 @@ nav{
 .contactlink{
 	opacity: 0%;
   position: fixed;
-	display: inline-block;
+	/*display: inline-block;*/
 	float: right;
 	width: auto;
   margin: 10px 0 0 0;
@@ -153,10 +153,6 @@ nav{
 	margin-top: 0px;
 	margin-left: 10%;
 	margin-right: 10%;
-}
-
-/*content div*/
-.work-content{
 }
 
 /*individual project divs*/
@@ -219,10 +215,6 @@ nav{
 }
 
 
-footer{
-}
-
-
 .footericon{
 	float: left;
 	width: auto;
@@ -270,7 +262,7 @@ footer{
 
 
 .madeby{
-	display: inline-block;
+	/*display: inline-block;*/
 	float: right;
 	width: auto;
   margin: 0 7px 0 0;
