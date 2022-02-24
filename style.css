@@ -14,10 +14,10 @@ body{
 
 /*paragraph*/
 p{
-  font-family: paralucent-text, sans-serif;
+	font-family: paralucent-text, sans-serif;
 	font-weight: 300;
-  font-size: .7em;
-  line-height: 1.7;
+	font-size: .7em;
+	line-height: 1.7;
 	margin: 0;
 }
 
@@ -58,8 +58,8 @@ h4{
 
 /* Sets style for links*/
 a:link, a:visited{
-  color:#000;
-  text-decoration: none;
+	color:#000;
+	text-decoration: none;
 	transition: color .5s ease-out;
 }
 
@@ -86,12 +86,11 @@ nav{
 
 /*Calvin Lai title only*/
 .title{
-  position: fixed;
-	/*display: inline-block;*/
+	position: fixed;
 	float: left;
 	width: auto;
-  margin: 10px 0 0 10%;
-  text-align: left;
+	margin: 10px 0 0 10%;
+	text-align: left;
 	z-index: -1;
 }
 
@@ -99,37 +98,34 @@ nav{
 /*title LINK OVERLAY*/
 .titlelink{
 	opacity: 0%;
-  position: fixed;
-	/*display: inline-block;*/
+	position: fixed;
 	float: left;
 	width: auto;
-  margin: 10px 0 0 10%;
-  text-align: left;
+	margin: 10px 0 0 10%;
+	text-align: left;
 	z-index: 1;
 }
 
 /*contact TEXT ONLY*/
 .contact{
-  position: fixed;
-	/*display: inline-block;*/
+	position: fixed;
 	float: right;
 	width: auto;
-  margin: 10px 0 0 0;
+	margin: 10px 0 0 0;
 	right: 10%;  /*MATCH THIS WITH LEFT .TITLE LEFT MARGIN*/
-  text-align: right;
+	text-align: right;
 	z-index: -1;
 }
 
 /*contact LINK OVERLAY*/
 .contactlink{
 	opacity: 0%;
-  position: fixed;
-	/*display: inline-block;*/
+	position: fixed;
 	float: right;
 	width: auto;
-  margin: 10px 0 0 0;
+	margin: 10px 0 0 0;
 	right: 10%;  /*MATCH THIS WITH LEFT .TITLE LEFT MARGIN*/
-  text-align: right;
+	text-align: right;
 	z-index: 1;
 }
 
@@ -142,7 +138,6 @@ nav{
 
 /*filter div*/
 .filter{
-	/*margin-top: 0px;*/
 	margin-left: 10%;
 	margin-right: 10%;
 }
