@@ -1,0 +1,379 @@
+body{
+	background-color: #fff;
+	font-family: paralucent, paralucent-text, Arial, sans-serif;
+	font-style: normal;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+/*-----paragraph styles-----*/
+
+/*paragraph*/
+p{
+	font-family: paralucent-text, sans-serif;
+	font-weight: 300;
+	font-size: .7em;
+	line-height: 1.7;
+	margin: 0;
+}
+
+/*headings*/
+h1{ /*header*/
+	font-family: paralucent, sans-serif;
+	font-weight: 500;
+	font-size: 1.3em;
+	line-height: 1.7;
+	margin: 0;
+}
+
+/*say hi*/
+h2{
+	font-weight: 500;
+	font-size: 1em;
+	line-height: 1.7;
+	margin: 0;
+}
+
+/*project title*/
+h3{
+	font-weight: 500;
+	font-size: .7em;
+	letter-spacing: .03em;
+	line-height: 1.7;
+	margin: 0;
+}
+
+/*project type*/
+h4{
+	font-weight: 500;
+	font-size: .5em;
+	letter-spacing: .03em;
+	line-height: 2em;
+	margin: 0;
+}
+
+/* Sets style for links*/
+a:link, a:visited{
+	color:#000;
+	text-decoration: none;
+	transition: color .5s ease-out;
+}
+
+/*sets curser icon when hovering over link*/
+a:hover{
+	cursor: pointer;
+	color: #D50000;
+}
+
+img{
+	width: 100%;
+}
+
+
+
+/*-----div styles-----*/
+
+nav{
+	height: 80px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/*Calvin Lai title only*/
+.title{
+	position: fixed;
+	float: left;
+	width: auto;
+	margin: 10px 0 0 10%;
+	text-align: left;
+	z-index: -1;
+}
+
+/* .TITLELINK SHOULD MATCH .TITLE EXACTLY*/
+/*title LINK OVERLAY*/
+.titlelink{
+	opacity: 0%;
+	position: fixed;
+	float: left;
+	width: auto;
+	margin: 10px 0 0 10%;
+	text-align: left;
+	z-index: 1;
+}
+
+/*contact TEXT ONLY*/
+.contact{
+	position: fixed;
+	float: right;
+	width: auto;
+	margin: 10px 0 0 0;
+	right: 10%;  /*MATCH THIS WITH LEFT .TITLE LEFT MARGIN*/
+	text-align: right;
+	z-index: -1;
+}
+
+/*contact LINK OVERLAY*/
+.contactlink{
+	opacity: 0%;
+	position: fixed;
+	float: right;
+	width: auto;
+	margin: 10px 0 0 0;
+	right: 10%;  /*MATCH THIS WITH LEFT .TITLE LEFT MARGIN*/
+	text-align: right;
+	z-index: 1;
+}
+
+/*sun and moon indicators*/
+.legend{
+	display: inline-block;
+	margin-top: 0;
+	padding: 18px 20% 0 20%;
+}
+
+/*filter div*/
+.filter{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+/*topgap div*/
+.topgap{
+	height: 20vh;
+	margin-top: 0px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+/*individual project divs*/
+.projects{
+	margin-top: 0px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.project-description{
+	padding: 0 30% 0 20%;
+	margin-bottom: 18em;
+}
+
+.project-image{
+	width: 100%;
+	margin-bottom: 1.5em;
+}
+
+#desktop {
+	display:block;
+}
+
+#mobile {
+	display:none;
+}
+
+
+/*create the div container for the 2 bio columns*/
+#bio{
+	margin: 33em 10% 10em 10%;
+}
+
+/*set the style to match the project descriptions*/
+.bio-description{
+	padding-left: 20%;
+	margin-bottom: 18em;
+}
+
+/*set the row width*/
+.bio-row{
+	display: table;
+	width: 100%;
+}
+
+/*set overall column padding*/
+.column{
+	float: left;
+	padding-right: 10%;
+}
+
+/*set L column width*/
+.left{
+	width: 45%;
+}
+
+/*set R column width*/
+.right{
+	width: 35%;
+}
+
+
+.footericon{
+	float: left;
+	width: auto;
+  margin: 0 0 5px 5px;
+	transition: color .5s ease-out;
+}
+
+.footericon:hover{
+	color: #ffc507;
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #f8f8f8;
+  color: #000;
+  text-align: center;
+  border-radius: 2px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -30px;
+  left: 105%;
+	/*tooltip transition*/
+	opacity: 0;
+	transition: all .5s ease-out;
+	-webkit-transition: all .5s ease-out;
+  -moz-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
+  -ms-transition: all .5s ease-out;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+	opacity: 1;
+}
+
+
+.madeby{
+	/*display: inline-block;*/
+	float: right;
+	width: auto;
+  margin: 0 7px 0 0;
+}
+
+
+
+/*sets style when screen smaller than 900px*/
+@media screen and (max-width: 900px) {
+	.legend{
+		padding: 18px 0 0 30%;
+	}
+
+	.project-description{
+		padding: 0 0 0 0;
+		margin-bottom: 10em;
+	}
+
+	.project-image{
+		margin-bottom: 1.5em;
+	}
+
+	/*set the style to match the project descriptions*/
+	.bio-description{
+		padding-left: 0;
+	}
+
+	#bio{
+		margin: 20em 10% 10em 10%;
+	}
+}
+
+
+/*sets style when screen smaller than 600px*/
+@media screen and (max-width: 600px) {
+	.title{
+		margin: 10px 0 0 5%;
+	}
+
+	.titlelink{
+		margin: 10px 0 0 5%;
+	}
+
+	.contact{
+		right: 5%;
+	}
+
+	.contactlink{
+		right: 5%;
+	}
+
+	/*rotate icon animation*/
+	#rotateicon {
+  	animation: rotation 2s infinite linear;
+	}
+
+	@keyframes rotation {
+	  from {
+	    transform: rotate(0deg);
+	  }
+	  to {
+	    transform: rotate(359deg);
+	  }
+	}
+
+	.filter{
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	.legend{
+		padding: 80px 0 0 0;
+	}
+
+	.topgap{
+		height: 20vh;
+	}
+
+	.projects{
+		margin-top: 0px;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	.project-description{
+		margin-bottom: 10em;
+	}
+
+	#bio{
+		margin: 15em 5% 10em 5%;
+	}
+
+	/*set the style to match the project descriptions*/
+	.bio-description{
+		padding-left: 0;
+	}
+
+	/*set L column width*/
+	.left{
+		width: 95%;
+	}
+
+	/*set R column width*/
+	.right{
+		width: 95%;
+	}
+
+
+	/*switch off desktop images*/
+	#desktop {
+		display: none;
+	}
+
+	/*switch on mobile images*/
+	#mobile {
+		display: block;
+	}
+
+}
